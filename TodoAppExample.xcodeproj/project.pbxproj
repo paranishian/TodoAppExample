@@ -12,6 +12,12 @@
 		C167F3EF2165944C002840A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C167F3ED2165944C002840A1 /* Main.storyboard */; };
 		C167F3F12165944F002840A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C167F3F02165944F002840A1 /* Assets.xcassets */; };
 		C167F3F42165944F002840A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C167F3F22165944F002840A1 /* LaunchScreen.storyboard */; };
+		C167F3FC21659459002840A1 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167F3FB21659459002840A1 /* Task.swift */; };
+		C167F3FE216594E3002840A1 /* TaskDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167F3FD216594E3002840A1 /* TaskDataSource.swift */; };
+		C167F40021659A33002840A1 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167F3FF21659A33002840A1 /* TaskListCell.swift */; };
+		C167F40221659BF1002840A1 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167F40121659BF1002840A1 /* TaskListViewController.swift */; };
+		C167F40421659DD1002840A1 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C167F40321659DD1002840A1 /* CreateTaskView.swift */; };
+		C1E0823421663DB0002C8453 /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E0823321663DB0002C8453 /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C167F3F02165944F002840A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C167F3F32165944F002840A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C167F3F52165944F002840A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C167F3FB21659459002840A1 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C167F3FD216594E3002840A1 /* TaskDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataSource.swift; sourceTree = "<group>"; };
+		C167F3FF21659A33002840A1 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		C167F40121659BF1002840A1 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		C167F40321659DD1002840A1 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		C1E0823321663DB0002C8453 /* CreateTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				C167F3F02165944F002840A1 /* Assets.xcassets */,
 				C167F3F22165944F002840A1 /* LaunchScreen.storyboard */,
 				C167F3F52165944F002840A1 /* Info.plist */,
+				C167F3FB21659459002840A1 /* Task.swift */,
+				C167F3FD216594E3002840A1 /* TaskDataSource.swift */,
+				C167F3FF21659A33002840A1 /* TaskListCell.swift */,
+				C167F40121659BF1002840A1 /* TaskListViewController.swift */,
+				C167F40321659DD1002840A1 /* CreateTaskView.swift */,
+				C1E0823321663DB0002C8453 /* CreateTaskViewController.swift */,
 			);
 			path = TodoAppExample;
 			sourceTree = "<group>";
@@ -136,7 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C167F3EC2165944C002840A1 /* ViewController.swift in Sources */,
+				C167F40421659DD1002840A1 /* CreateTaskView.swift in Sources */,
+				C167F40021659A33002840A1 /* TaskListCell.swift in Sources */,
+				C167F3FE216594E3002840A1 /* TaskDataSource.swift in Sources */,
+				C167F3FC21659459002840A1 /* Task.swift in Sources */,
 				C167F3EA2165944C002840A1 /* AppDelegate.swift in Sources */,
+				C167F40221659BF1002840A1 /* TaskListViewController.swift in Sources */,
+				C1E0823421663DB0002C8453 /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
