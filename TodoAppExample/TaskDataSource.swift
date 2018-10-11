@@ -10,21 +10,24 @@ import Foundation
 
 class TaskDataSource: NSObject {
     
-    private var tasks = [Task]()
+    private var tasks: [Task]!
+    
+    override init() {
+        super.init()
+        loadData()
+    }
     
     func loadData() {
         let userDefaults = UserDefaults.standard
         let taskData = userDefaults.object(forKey: "tasks") as? Data
         guard let t = taskData else { return }
-        // TODO: なんか動いてないぽい
         let unArchiveData = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(t)
         tasks = unArchiveData as? [Task] ?? [Task]()
     }
     
     func save(task: Task) {
         tasks.append(task)
-        // TODO: なんか動いてないぽい
-        let encodedTask = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: true)
+        let encodedTask = try? NSKeyedArchiver.archivedData(withRootObject: tasks, requiringSecureCoding: false)
         let userDefaults = UserDefaults.standard
         userDefaults.set(encodedTask, forKey: "tasks")
         userDefaults.synchronize()
